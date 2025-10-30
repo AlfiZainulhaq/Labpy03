@@ -14,3 +14,5 @@ while count < n:
         count += 1
         print(f"data ke: {count} => {a}")
 print("Selesai")
+
+print("selesai")
