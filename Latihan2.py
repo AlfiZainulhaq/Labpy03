@@ -1,17 +1,18 @@
-modal = 100000000  # modal awal
-laba_total = 0     # untuk menyimpan total laba
+modal = 100_000_000
+total_laba = 0
 
-for bulan in range(1, 9):  # dari bulan 1 sampai 8
-    if bulan in [1, 2]:
-        laba = 0
-    elif bulan in [3, 4]:
-        laba = modal * 0.01
-    elif bulan in [5, 6, 7]:
-        laba = modal * 0.05
-    else:  # bulan ke-8
-        laba = modal * 0.03
-
-    laba_total += laba
+for bulan in range(1, 9):
+    if bulan <= 2:
+        persen = 0
+    elif bulan <= 4:
+        persen = 1
+    elif bulan <= 7:
+        persen = 5
+    else:
+        persen = 2
+    
+    laba = modal * (persen / 100)
     print(f"laba bulan ke-{bulan} sebesar: {laba}")
+    total_laba += laba
 
-print(f"Total laba adalah: {laba_total}")
+print(f"Total laba adalah: {total_laba}")
