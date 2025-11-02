@@ -81,3 +81,35 @@ Menambahkan laba bulan ini ke total semua laba.
 <pre>print(f"Total laba adalah: {total_laba}")</pre>
 
 menampilkan hasil akhir total laba dari bulan 1–8.
+
+## Latihan 3
+
+<pre>
+<ul>
+<li>Tampilkan saldo saat ini.
+<li>Tampilkan menu pilihan.
+1. Tarik Uang
+2. Keluar
+<li>Minta input pilihan pengguna (1 atau 2)</li>
+<li>Percabangan berdasarkan pilihan</li>
+<pre>Jika pengguna memilih 1 (Tarik Uang):
+
+Minta input jumlah uang yang ingin ditarik.</pre>
+
+<pre>Periksa apakah saldo mencukupi:</pre>
+
+<pre>Jika saldo ≥ jumlah penarikan, maka:
+Kurangi saldo.
+Tampilkan pesan “Penarikan berhasil!”</pre>
+
+<pre>Jika saldo < jumlah penarikan, maka:
+
+Tampilkan pesan “Saldo tidak cukup!”
+
+Kembali ke awal loop (menampilkan saldo terbaru).</pre>
+
+<pre>Jika pengguna memilih 2 (Keluar):
+
+Tampilkan pesan “Terima kasih telah menggunakan ATM!”
+
+Hentikan program dengan break.</pre>
